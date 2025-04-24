@@ -25,12 +25,76 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li><a href="#recipes" class="nav__link">Recetas</a></li>
+            <li>
+              <a href="#reservation" class="nav__link">Reservar una mesa</a>
+            </li>
+            <li><a href="#footer" class="nav__link">Contactos</a></li>
+          </ul>
+        </nav>
+        <div class="header__content">
+          <h1 class="header__title">Cafe de especialidad en Triple Peaks</h1>
+          <p class="header__description">
+            !Te damos la bienvenida a nuestra zona de estudios! Aqui tenemos
+            cafe para darte energia y motivar tu creatividad
+          </p>
+        </div>
+        <div class="header__footer">
+          <p class="header__hours">
+            Lunes a Viernes (de 10:00h a 19:00h)<br />
+            Sabadosy Domingos de (de 11:00h a 18:00h)
+          </p>
+          <p class="header__address">
+            Avenida del exito 200, Ciudad Triple Peaks
+          </p>
+        </div>
+      </header>
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Recetas</h2>
+          <p class="recipes__subtitle">
+            Echa un vistazo a las recetas que hemos reunido para que elabores
+            tus propios snacks
+          </p>
+          <div class="recipes__videos">
+            <div class="recipes__video-item">
+              <iframe
+                class="recipes__video"
+                src="https://www.youtube.com/embed/1aG7K0MZ6F4"
+                title="Receta en Aeropress"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__caption">Receta en Aeropress - ~5 min</p>
+            </div>
+            <div class="recipes__video-item">
+              <iframe
+                class="recipes__video"
+                src="https://www.youtube.com/embed/fE2h3lGlJ3U"
+                title="Receta en cafetera francesa"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__caption">
+                Receta en cafetera francesa - ~15 min
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer">
+        <div class="footer__social">
+          <a href="#" class="footer__link">Facebook</a>
+          <a href="#" class="footer__link">Instagram</a>
+        </div>
+        <p class="footer__copyright">2025 Oscar</p>
+      </footer>
     </div>
   </body>
 </html>
