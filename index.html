@@ -13,7 +13,6 @@
       content="cafeteria, cafe, pasteles, barista, desayuno, Triple Peaks"
     />
     <title>Cafeteria</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,6 +25,11 @@
   <body>
     <div class="page">
       <header class="header">
+        <img
+          class="header__image"
+          src="./images/inside_coffee_shop.png"
+          alt="Interior de la cafeteria"
+        />
         <nav class="nav">
           <ul class="nav__links">
             <li><a href="#recipes" class="nav__link">Recetas</a></li>
@@ -35,21 +39,18 @@
             <li><a href="#footer" class="nav__link">Contactos</a></li>
           </ul>
         </nav>
-        <div class="header__content">
-          <h1 class="header__title">Cafe de especialidad en Triple Peaks</h1>
-          <p class="header__description">
-            !Te damos la bienvenida a nuestra zona de estudios! Aqui tenemos
-            cafe para darte energia y motivar tu creatividad
-          </p>
-        </div>
+        <h1 class="header__title">Cafe de especialidad en Triple Peaks</h1>
+        <p class="header__description">
+          !Te damos la bienvenida a nuestra zona de estudios! Aqui tenemos cafe
+          para darte energia y motivar tu creatividad
+        </p>
         <div class="header__footer">
-          <p class="header__hours">
-            Lunes a Viernes (de 10:00h a 19:00h)<br />
-            Sabadosy Domingos de (de 11:00h a 18:00h)
+          <p class="header__paragraph">Lunes a Viernes (de 10:00h a 19:00h)</p>
+          <p class="header__paragraph">
+            Sabados y Domingos (de 11:00h a 18:00h)
           </p>
-          <p class="header__address">
-            Avenida del exito 200, Ciudad Triple Peaks
-          </p>
+          <p class="header__paragraph">Avenida del exito 200</p>
+          <p class="header__paragraph">Ciudad Triple Peaks</p>
         </div>
       </header>
       <main class="content">
@@ -62,20 +63,18 @@
           <div class="recipes__videos">
             <div class="recipes__video-item">
               <iframe
-                class="recipes__video"
+                class="recipes__iframe"
                 src="https://www.youtube.com/embed/1aG7K0MZ6F4"
                 title="Receta en Aeropress"
-                frameborder="0"
                 allowfullscreen
               ></iframe>
               <p class="recipes__caption">Receta en Aeropress - ~5 min</p>
             </div>
             <div class="recipes__video-item">
               <iframe
-                class="recipes__video"
+                class="recipes__iframe"
                 src="https://www.youtube.com/embed/fE2h3lGlJ3U"
                 title="Receta en cafetera francesa"
-                frameborder="0"
                 allowfullscreen
               ></iframe>
               <p class="recipes__caption">
@@ -86,12 +85,95 @@
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="reservation__form form" name="reservation-form">
+            <fieldset class="reservation__fieldset">
+              <label class="reservation__label" for="name">Nombre *</label>
+              <input
+                class="reservation__input"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Nombre"
+                required
+              />
+              <label class="reservation__label" for="guests"
+                >Numero de comensales *></label
+              >
+              <input
+                class="reservation__input"
+                id="guests"
+                type="number"
+                name="guests"
+                placeholder="1-8"
+                required
+              />
+              <label class="reservation__label" for="datetime"
+                >Fecha y Hora *</label
+              >
+              <input
+                class="reservation__input"
+                id="datetime"
+                type="datetime-local"
+                name="datetime"
+                required
+              />
+              <label class="reservation__label" for="email"
+                >Tu correo electronico *</label
+              >
+              <input
+                class="reservation__input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+              <label class="reservation__checkbox-container">
+                <input class="reservation__checkbox" type="checkbox" required />
+                Acepto los terminos de uso
+              </label>
+              <button type="submit" class="reservation__button">
+                Reservar una mesa
+              </button>
+            </fieldset>
+          </form>
         </section>
       </main>
       <footer class="footer" id="footer">
+        <div class="footer__content">
+          <div class="footer__logo-container">
+            <img
+              src="./images/logo_coffeeshop_dark.svg"
+              alt="Logo Triple Peaks"
+              class="footer__logo"
+            />
+            <div class="footer__circle"></div>
+          </div>
+        </div>
         <div class="footer__social">
-          <a href="#" class="footer__link">Facebook</a>
-          <a href="#" class="footer__link">Instagram</a>
+          <h2 class="footer__social-heading">Redes sociales</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__social-link">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="Facebook"
+                  class="footer__social-icon"
+                />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__social-link">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="Instagram"
+                  class="footer__social-icon"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
         </div>
         <p class="footer__copyright">2025 Oscar</p>
       </footer>

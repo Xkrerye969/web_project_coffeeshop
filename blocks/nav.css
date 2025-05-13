@@ -1,0 +1,22 @@
+@import url("../blocks/nav.css");
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
