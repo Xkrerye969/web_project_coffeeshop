@@ -1,7 +1,17 @@
 .header {
   height: 100vh;
   padding: 40px 80px;
-  background-color: #fff;
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__content {
@@ -13,15 +23,10 @@
 }
 
 .header__image {
-  width: 50%;
-  max-width: 480px;
+  width: 100%;
+  max-width: 440px;
   height: auto;
   border-radius: 8px;
-}
-
-.header__text {
-  flex: 1;
-  min-width: 280px;
 }
 
 .header__title {
@@ -38,10 +43,24 @@
 }
 
 .header__footer {
-  font-size: 16px;
-  color: #555;
+  font-size: 14px;
+  color: #888;
+  font-family: "Inter", sans-serif;
+  margin-top: 24px;
 }
 
 .header__paragraph {
   margin: 4px 0;
+}
+
+.header__title-accent {
+  color: #2f80ed;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.header__title,
+.header__description,
+.header__footer {
+  flex-basis: 500px;
 }
