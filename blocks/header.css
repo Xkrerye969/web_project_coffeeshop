@@ -16,15 +16,21 @@
 
 .header__content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.header__content > *:not(.header__image) {
+  flex: 1 1 500px;
+  max-width: 500px;
+}
+
 .header__image {
+  flex: 1 1 400px;
   width: 100%;
-  max-width: 440px;
+  max-width: 520px;
   height: auto;
   border-radius: 8px;
 }
@@ -40,6 +46,7 @@
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 24px;
+  max-width: 540px;
 }
 
 .header__footer {
@@ -62,5 +69,6 @@
 .header__title,
 .header__description,
 .header__footer {
-  flex-basis: 500px;
+  max-width: 500px;
+  flex: 1 1 500px;
 }
