@@ -79,7 +79,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
-  transition: color 0.3 ease;
+  transition: color 0.3s ease;
 }
 
 .footer__social-link:hover {
